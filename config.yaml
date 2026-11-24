@@ -1,0 +1,32 @@
+# Anthropic model for all Claude API calls
+model: claude-haiku-5-5
+
+# Minimum confidence for auto-approval; below this routes to needs_review/
+confidence_threshold: 0.8
+
+# All recognised document types — anything outside this list becomes "unknown"
+doc_types:
+  - payg_income_statement
+  - bank_interest_statement
+  - private_health_insurance_statement
+  - rental_property_statement
+  - work_expense_receipt
+  - unknown
+
+# Documents we expect from each client for FY 2024-25
+required_docs:
+  Eleanor Vance:
+    - payg_income_statement
+    - bank_interest_statement
+    - private_health_insurance_statement
+    - rental_property_statement
+    - work_expense_receipt
+  Thomas Nguyen:
+    - payg_income_statement
+    - bank_interest_statement
+    - work_expense_receipt
+  Priya Kapoor:
+    - payg_income_statement
+    - private_health_insurance_statement
+    - rental_property_statement
+    - work_expense_receipt

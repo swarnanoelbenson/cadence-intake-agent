@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+inbox/*.pdf
+!inbox/.gitkeep
+!tests/.gitkeep
+clients/
+needs_review/
+output/
+logs/
+tests/ground_truth.csv
